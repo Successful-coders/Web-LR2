@@ -1,9 +1,13 @@
-body{
+body {
     margin: 0;
-    font-family: 'Kaushan Script', cursive;
+    padding-top: 30px;
     font-size: 25px;
     line-height: 1.6;
     color: black;
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 *,
@@ -14,15 +18,23 @@ body{
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
-  
+
+@font-face {
+    font-family: 'pixelFont';
+    src: url('mainfont-webfont.woff2') format('woff2'), url('mainfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .sectionHead {
-  width: 100%;
-  margin-bottom: 20px;
-  font-size: 85px;
-  line-height: 80px;
-  padding-top: 20px;
-  padding-left: 200px;
-  color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 75px;
+    font-family: 'pixelFont', Arial, sans-serif;
+    line-height: 80px;
+    padding-top: 20px;
+    padding-left: 200px;
+    color: white;
 }
 
 .HeadTwo {
@@ -45,33 +57,43 @@ h1, h2, h3, h4, h5, h6{
     color: gray;
     position: relative;
 }
-.image{
-  display: block;
-  margin: auto;
-  width: 350px;
-  height: 350px;
-  border-radius: 80%;
+
+.profileImage {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
 }
-a{
-    font-size: 40px;
-    text-align: center;
-    font-family: "Montserrat";
-    color: wheat;
+
+.reportDoc {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+    .reportDoc .reportDocLink {
+        font-size: 40px;
+        color: wheat;
+    }
+
 .aboutP5 {
     font-weight: bolder;
     font-size: 40px;
-    font-family: "Montserrat";
     color:  white;
+    color
     padding: 0px
   }
-  
-  .aboutP6 {
+
+.githubLink
+{
+    color: wheat;
+}
+
+.aboutP6 {
     font-weight: bolder;
     font-size: 25px;
-    font-family: "Montserrat";
-    color:  white
-  }
+    color: white
+}
 
 .container{
     width: 1500px;
@@ -83,19 +105,18 @@ a{
     padding: 0;
   }
  
- li {
-   font-size: 16px;
+li {
+   font-size: 18px;
    font-style: initial;
    color: white;
-   font-family: "Montserrat";
  }
- 
+
 .about-content {
     width: 950px;
     font-size: 14px;
     line-height: 35px;
   }
- 
+
 .about {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -104,37 +125,39 @@ a{
    }
 
 .page-footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 14px;
-    color: black;
-    background-color:white;
-    margin-top: auto;
-  }
-  .page-footer p {
+    font-family: pixelFont, Arial, sans-serif;
+    position: relative;
+    padding-right: 16px;
+    padding-top: 10px;
+    left: 0;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    text-align: end;
+    font-size: 20px;
+}
+
+.page-footer p {
     margin: 0;
     padding: 0;
   }
 
-
-  .aboutP6Res {
+.aboutP6Res {
     padding-left: 0px;
+    padding-top: 20px;
   }
   
-  .abouth6index {
+.abouth6index {
     line-height: 10px;
   }
   
-  .styleSh {
-    font-family: "Montserrat";
-  }
-  
-  .style5 {
+.style5 {
     color: white;
   }
-  .arrow-left {
+
+.arrow-left {
     position: absolute;
     z-index: 99;
     top: 10%;
@@ -142,7 +165,8 @@ a{
     transform: translate(-8%, -50%);
     border-image-repeat: unset;
   }
-  .arrow-right {
+
+.arrow-right {
     position: absolute;
     justify-content: right;
     z-index: 99;
