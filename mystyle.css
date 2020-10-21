@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6{
   padding-top: 20px;
   padding-left: 200px;
   color: white;
+  font-family: 'Kaushan Script', cursive;
 }
 
 .HeadTwo {
@@ -32,17 +33,24 @@ h1, h2, h3, h4, h5, h6{
   color: white;
 
 }
-
+.commenting{
+  line-height: 20px;
+  font-family: "Montserrat";
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: medium;
+}
 .page {
     display: flex;
     flex-direction: column;
     min-width: 640px;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0;
     background-color: #B8B58F ;
     font-size: 30px;
     line-height: 18px;
-    color: gray;
+    color:white;
     position: relative;
 }
 .image{
@@ -72,7 +80,7 @@ a{
     color:  white
   }
 
-.container{
+.container1{
     width: 1500px;
     margin: auto;
 }
